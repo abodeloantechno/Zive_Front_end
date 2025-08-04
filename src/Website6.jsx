@@ -100,7 +100,7 @@ const ZiveWebsite = () => {
  alt="ZIVE Logo" 
  className="h-10 w-auto"
  />
- <span className="ml-2 text-2xl font-bold text-black">ZIVE</span>
+ <span className="ml-2 text-2xl font-bold text-black">ZYVE</span>
  </motion.div>
 
  {/* Desktop Navigation */}
@@ -187,7 +187,7 @@ const ZiveWebsite = () => {
  variants={itemVariants}
  className="text-xl text-gray-600 mb-8 leading-relaxed"
  >
- Unlock your potential with ZIVE's comprehensive approach to 
+ Unlock your potential with ZYVE's comprehensive approach to 
  <span className="text-blue-500 font-semibold"> health</span>,
  <span className="text-yellow-500 font-semibold"> wealth</span>, and
  <span className="text-pink-500 font-semibold"> fitness</span>.
@@ -357,7 +357,7 @@ const ZiveWebsite = () => {
  <div className="grid lg:grid-cols-2 gap-16 items-center">
  <motion.div variants={slideInVariants}>
  <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
- Why Choose <span className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">ZIVE?</span>
+ Why Choose <span className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">ZYVE?</span>
  </h2>
  <p className="text-xl text-gray-600 mb-8">
  We combine cutting-edge technology with proven methodologies to deliver results that transform lives.
@@ -513,7 +513,7 @@ const ZiveWebsite = () => {
  name: "Sarah Johnson",
  role: "Entrepreneur",
  image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
- quote: "ZIVE transformed not just my health, but my entire approach to life. I've never felt more confident and energized.",
+ quote: "ZYVE transformed not just my health, but my entire approach to life. I've never felt more confident and energized.",
  achievement: "Lost 30lbs, Started 2 businesses",
  rating: 5
  },
@@ -529,7 +529,7 @@ const ZiveWebsite = () => {
  name: "Emma Rodriguez",
  role: "Fitness Coach",
  image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
- quote: "As a fitness professional myself, I was amazed by ZIVE's holistic approach. It's revolutionary.",
+ quote: "As a fitness professional myself, I was amazed by ZYVE's holistic approach. It's revolutionary.",
  achievement: "Ran First Marathon",
  rating: 5
  }
@@ -845,7 +845,7 @@ const ZiveWebsite = () => {
  alt="ZIVE Logo" 
  className="h-8 w-auto invert"
  />
- <span className="ml-2 text-2xl font-bold">ZIVE</span>
+ <span className="ml-2 text-2xl font-bold">ZYVE</span>
  </div>
  <p className="text-gray-400">
  Transforming lives through health, wealth, and fitness excellence.
@@ -885,7 +885,7 @@ const ZiveWebsite = () => {
  </div>
  
  <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
- <p>&copy; 2025 ZIVE. All rights reserved.</p>
+ <p>&copy; 2025 ZYVE. All rights reserved.</p>
  </div>
  </div>
  </footer>

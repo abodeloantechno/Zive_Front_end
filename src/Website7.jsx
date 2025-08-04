@@ -105,7 +105,7 @@ const ZiveWebsite = () => {
  alt="ZIVE Logo" 
  className="h-8 w-auto brightness-0 invert"
  />
- <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent">ZIVE</span>
+ <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-pink-400 bg-clip-text text-transparent">ZYVE</span>
  </motion.div>
 
  <div className="hidden md:flex space-x-6">
@@ -881,7 +881,7 @@ const ZiveWebsite = () => {
  />
  
  <p className="text-gray-500">
- &copy; 2025 ZIVE. Revolutionizing Human Potential.
+ &copy; 2025 ZYVE. Revolutionizing Human Potential.
  </p>
  </motion.div>
  </div>
