@@ -201,6 +201,27 @@ const Gallery = () => {
                 </p>
             </div>
 
+            <div className=" absolute bottom-4 sm:bottom-6 left-2 sm:left-4 md:left-6 lg:left-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white text-xs sm:text-sm max-w-xs animate-[slideUp_1.8s_ease-out] z-40">
+                <style jsx>{`
+                    @keyframes slideUp {
+                        from {
+                            transform: translateY(100vh);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                `}</style>
+                <div className="text-yellow-400 font-bold mb-1 sm:mb-2">🌟 Interactive Features</div>
+                <div className="space-y-1">
+                    <div>• Hover over planets for details</div>
+                    <div>• Watch the orbital motion</div>
+                    <div>• Each planet moves at different speeds</div>
+                </div>
+            </div>
+
             {/* Legend */}
             {/* <div className=" absolute bottom-4 sm:bottom-6 left-2 sm:left-4 md:left-6 lg:left-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white max-w-xs animate-[slideUp_1.8s_ease-out] z-40">
                 <style jsx>{`
@@ -228,26 +249,7 @@ const Gallery = () => {
             </div> */}
 
             {/* Controls info - Hidden on mobile, visible on tablet+ */}
-            <div className=" absolute bottom-4 sm:bottom-6 right-2 sm:right-4 md:right-6 lg:right-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white text-xs sm:text-sm max-w-xs animate-[slideUp_1.8s_ease-out] z-40">
-                <style jsx>{`
-                    @keyframes slideUp {
-                        from {
-                            transform: translateY(100vh);
-                            opacity: 0;
-                        }
-                        to {
-                            transform: translateY(0);
-                            opacity: 1;
-                        }
-                    }
-                `}</style>
-                <div className="text-yellow-400 font-bold mb-1 sm:mb-2">🌟 Interactive Features</div>
-                <div className="space-y-1">
-                    <div>• Hover over planets for details</div>
-                    <div>• Watch the orbital motion</div>
-                    <div>• Each planet moves at different speeds</div>
-                </div>
-            </div>
+            
             
         </div>
     );
