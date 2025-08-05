@@ -228,7 +228,7 @@ const Gallery = () => {
             </div> */}
 
             {/* Controls info - Hidden on mobile, visible on tablet+ */}
-            <div className="hidden sm:block absolute bottom-4 sm:bottom-6 right-2 sm:right-4 md:right-6 lg:right-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white text-xs sm:text-sm max-w-xs animate-[slideUp_1.8s_ease-out] z-40">
+            <div className=" absolute bottom-4 sm:bottom-6 right-2 sm:right-4 md:right-6 lg:right-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white text-xs sm:text-sm max-w-xs animate-[slideUp_1.8s_ease-out] z-40">
                 <style jsx>{`
                     @keyframes slideUp {
                         from {
