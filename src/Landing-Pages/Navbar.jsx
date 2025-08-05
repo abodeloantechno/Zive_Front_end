@@ -9,13 +9,13 @@ const Navbar = ({ scrollToSection }) => {
     <nav className="fixed w-full z-50 bg-white shadow-lg transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <MotionDiv className="flex items-center space-x-3" delay={0}>
+          <MotionDiv className=" flex items-center space-x-3" delay={0}>
             <img 
               src="https://ik.imagekit.io/psltlu4ds/zive_logo_page-00001.jpg?updatedAt=1753357527846" 
               alt="Zive Fitness Logo" 
-              className="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300"
+              className="w-12  h-12 object-contain hover:scale-110 transition-transform duration-300"
             />
-            <span className="text-2xl font-bold text-gray-900">Zyve Fitness</span>
+            <span className="text-2xl font-bold text-gray-900">ZyveFit</span>
           </MotionDiv>
           
           <MotionDiv className=" hidden lg:flex items-center space-x-8" delay={200}>

@@ -2,26 +2,53 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const Gallery = () => {
     const [rotation, setRotation] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
     const animationRef = useRef();
     const lastTimeRef = useRef(0);
+
+    
+
+    // useEffect(() => {
+    //     const animate = (currentTime) => {
+    //         if (currentTime - lastTimeRef.current >= 16) { // ~60fps
+    //             setRotation(prev => prev + 0.5);
+    //             lastTimeRef.current = currentTime;
+    //         }
+    //         animationRef.current = requestAnimationFrame(animate);
+    //     };
+
+    //     animationRef.current = requestAnimationFrame(animate);
+
+    //     return () => {
+    //         if (animationRef.current) {
+    //             cancelAnimationFrame(animationRef.current);
+    //         }
+    //     };
+    // }, []);
+
+    const handlePlanetHover = (isHovering) => {
+        setIsHovered(isHovering);
+    };
 
     useEffect(() => {
         const animate = (currentTime) => {
             if (currentTime - lastTimeRef.current >= 16) { // ~60fps
-                setRotation(prev => prev + 0.5);
+                if (!isHovered) {
+                    setRotation(prev => prev + 0.5);
+                }
                 lastTimeRef.current = currentTime;
             }
             animationRef.current = requestAnimationFrame(animate);
         };
-
+    
         animationRef.current = requestAnimationFrame(animate);
-
+    
         return () => {
             if (animationRef.current) {
                 cancelAnimationFrame(animationRef.current);
             }
         };
-    }, []);
+    }, [isHovered]); // Added isHovered to dependency array
 
     const planets = [
         {
@@ -132,6 +159,8 @@ const Gallery = () => {
                                     transform: `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))`,
                                     willChange: 'transform'
                                 }}
+                                onMouseEnter={() => handlePlanetHover(true)}
+    onMouseLeave={() => handlePlanetHover(false)}
                             >
                                 {/* Planet glow */}
                                 <div className={`absolute inset-0 ${planet.size} ${planet.color} rounded-full blur-sm sm:blur-md opacity-50`}></div>
@@ -165,7 +194,7 @@ const Gallery = () => {
             {/* Title and Description */}
             <div className="absolute top-30 md:top-20 lg:top-25 left-1/2 transform -translate-x-1/2 text-center px-4 w-full">
                 <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2 sm:mb-4 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
-                    ZyveFitness Solar System
+                    ZyveFit Solar System
                 </h1>
                 <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto leading-relaxed">
                     A holistic wellness universe where Meditation, Nutrition, and Fitness orbit around your health journey
@@ -173,7 +202,7 @@ const Gallery = () => {
             </div>
 
             {/* Legend */}
-            <div className=" absolute bottom-4 sm:bottom-6 left-2 sm:left-4 md:left-6 lg:left-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white max-w-xs animate-[slideUp_1.8s_ease-out] z-40">
+            {/* <div className=" absolute bottom-4 sm:bottom-6 left-2 sm:left-4 md:left-6 lg:left-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white max-w-xs animate-[slideUp_1.8s_ease-out] z-40">
                 <style jsx>{`
                     @keyframes slideUp {
                         from {
@@ -196,7 +225,7 @@ const Gallery = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
 
             {/* Controls info - Hidden on mobile, visible on tablet+ */}
             <div className="hidden sm:block absolute bottom-4 sm:bottom-6 right-2 sm:right-4 md:right-6 lg:right-8 bg-black/70 sm:bg-black/60 backdrop-blur-lg rounded-lg p-3 sm:p-4 text-white text-xs sm:text-sm max-w-xs animate-[slideUp_1.8s_ease-out] z-40">

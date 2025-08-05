@@ -8,28 +8,28 @@ const Process = ({ scrollToSection }) => {
   const timelineItems = [
     {
       step: '01',
-      title: 'Tell Us Your Story',
-      description: 'Upload your latest health data blood work, prescriptions, body weight, height, and anything else that defines You',
+      title: 'Tell us your story',
+      description: <>'Upload your latest health data blood work, prescriptions, body weight, height, and anything else that defines <u>YOU</u>.'</>,
       icon: <User className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: 'bg-blue-500'
     },
     {
       step: '02',
-      title: 'Express Your Preferences',
-      description: 'Share what you love and what you don’t food, movement, routines. This is your plan, your way.',
+      title: 'Express your preferences',
+      description:<> "Share what you love an whay you don't - food, movement and routines. <br/> This is <u>YOUR PLAN</u>, <u>YOUR WAY</u>"</>,
       icon: <Target className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: 'bg-green-500'
     },
     {
       step: '03',
-      title: 'Define Your Goals',
+      title: 'Define your goals',
       description: 'Set your ambitions. From optimal focus at work to marathon readiness, or simply feeling your best your goals drive your custom journey.',
       icon: <Zap className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: 'bg-purple-500'
     },
     {
       step: '04',
-      title: 'Unlock Daily Precision',
+      title: 'Unlock daily precision',
       description: 'Receive personalized, science-backed nutrition, fitness, and meditation guidance every morning. ZyveFit recalibrates based on your progress, so every day takes you closer to your best self.',
       icon: <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: 'bg-orange-500'

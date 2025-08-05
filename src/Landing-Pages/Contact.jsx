@@ -100,7 +100,7 @@ const Contact = () => {
               <FaPhone className="text-white" size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">WhatsApp Message</h3>
                 <p className="text-gray-600">+91-9080709466</p>
               </div>
             </div>

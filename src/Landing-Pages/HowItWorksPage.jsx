@@ -15,11 +15,19 @@ const HowItWorksPage = () => {
           </p>
         </MotionDiv>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Our Hybrid AI */}
+        <div className="max-w-6xl mx-auto">
+          {/* Our Hybrid AI - Centered and Enhanced */}
           <MotionDiv delay={200}>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Hybrid AI:</h3>
-            <div className="space-y-6">
+            {/* <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Our <span className="bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent">Hybrid AI</span>
+              </h3>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Experience the power of intelligent health optimization with our advanced AI system
+              </p>
+            </div> */}
+            
+            <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   icon: FaRobot,
@@ -40,35 +48,16 @@ const HowItWorksPage = () => {
                   color: "bg-green-500"
                 }
               ].map(({ icon: Icon, title, description, color }, idx) => (
-                <div key={idx} className="flex items-start space-x-4">
-                  <div className={`w-12 h-12 ${color} rounded-full flex items-center justify-center flex-shrink-0`}>
-                    <Icon className="text-white" size={20} />
+                <div key={idx} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                  <div className={`w-16 h-16 ${color} rounded-2xl flex items-center justify-center mb-6 mx-auto`}>
+                    <Icon className="text-white" size={28} />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">{title}</h4>
-                    <p className="text-gray-600">{description}</p>
+                  <div className="text-center">
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">{title}</h4>
+                    <p className="text-gray-600 leading-relaxed">{description}</p>
                   </div>
                 </div>
               ))}
-            </div>
-          </MotionDiv>
-
-          {/* Right Column - The ZyveFit Difference */}
-          <MotionDiv delay={400}>
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8">
-              <h4 className="text-2xl font-bold text-gray-900 mb-6 text-center">The ZyveFit Difference</h4>
-              <div className="space-y-4">
-                <div className="bg-white p-4 rounded-xl shadow-sm">
-                  <p className="text-gray-600">
-                    <span className="font-semibold text-red-500">Most health apps:</span> Too narrow, generic advice
-                  </p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm">
-                  <p className="text-gray-600">
-                    <span className="font-semibold text-green-500">ZyveFit:</span> Holistic, daily, actionable solutions—no more confusion
-                  </p>
-                </div>
-              </div>
             </div>
           </MotionDiv>
         </div>
