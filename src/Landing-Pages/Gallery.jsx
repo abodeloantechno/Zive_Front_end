@@ -107,7 +107,7 @@ const Gallery = () => {
             <div className="bg-gradient-to-r from-cyan-400/20 via-yellow-400/20 to-pink-500/20 absolute inset-0"></div>
 
             {/* Solar System Container */}
-            <div className="flex  items-center justify-center p-40  md:p-24 lg:p-30">
+            <div className="flex  items-center justify-center p-40 mt-6 lg:mt-0  md:p-18 lg:p-30">
                 <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] xl:w-[700px] xl:h-[700px]">
 
                     {/* Orbit rings */}
@@ -193,10 +193,10 @@ const Gallery = () => {
 
             {/* Title and Description */}
             <div className="absolute top-30 md:top-20 lg:top-25 left-1/2 transform -translate-x-1/2 text-center px-4 w-full">
-                <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2 sm:mb-4 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-2 sm:mb-4 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
                     ZyveFit Solar System
                 </h1>
-                <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto leading-relaxed">
+                <p className="text-gray-300 text-sm md:text-base lg:text-lg max-w-md  md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto leading-relaxed">
                     A holistic wellness universe where Meditation, Nutrition, and Fitness orbit around your health journey
                 </p>
             </div>
