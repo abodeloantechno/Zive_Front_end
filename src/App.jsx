@@ -29,8 +29,10 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation scrollToSection={scrollToSection} />
-    
-      <Gallery scrollToSection={scrollToSection} />
+
+      <Home scrollToSection={scrollToSection}/>
+   
+      {/* <Gallery  /> */}
       <About />
       <Process scrollToSection={scrollToSection} />
       <Programs />

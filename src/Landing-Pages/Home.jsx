@@ -27,14 +27,14 @@ const Home = ({ scrollToSection }) => {
               <img 
                 src="https://ik.imagekit.io/psltlu4ds/zive_sollar_system-removebg-preview.png?updatedAt=1753949829948" 
                 alt="Zive Fitness Logo" 
-                className="w-30 h-30 object-contain mx-auto"
+                className="w-20 h-20 md:w-30 lg:h-30 object-contain mx-auto"
               />
             </div>
           </div>
         </MotionDiv>
         
         <MotionDiv delay={600}>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Transform Your
             <span className="bg-gradient-to-r from-cyan-400 via-yellow-400 to-pink-500 bg-clip-text text-transparent">  <TypeAnimation
                 sequence={['Mind', 1500, 'Body', 1500, 'Lifestyle', 1500]}
@@ -46,7 +46,7 @@ const Home = ({ scrollToSection }) => {
         </MotionDiv>
         
         <MotionDiv delay={900}>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Join Zyve Fitness and discover the perfect blend of strength, endurance, and wellness in our state-of-the-art facility.
           </p>
         </MotionDiv>
