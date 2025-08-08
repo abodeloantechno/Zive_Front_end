@@ -47,7 +47,7 @@ const Home = ({ scrollToSection }) => {
         
         <MotionDiv delay={900}>
           <p className="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join Zyve Fitness and discover the perfect blend of strength, endurance, and wellness in our state-of-the-art facility.
+            Join ZyveFit and discover the perfect blend of strength, endurance, and wellness in our state of the art technology and wisdom.
           </p>
         </MotionDiv>
         
